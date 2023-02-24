@@ -11,6 +11,10 @@ function App() {
   function handleSearch(newSearchQuery) {
     setSearchQuery(newSearchQuery)
   }
+  
+  function updateCart(postId, postPrice) {
+    setCart(addProductToCart(postId, postPrice));
+  }
 
   function addProductToCart(postId, postPrice) {
     let cartItem = {'id': postId, 'price': parseFloat(postPrice.slice(1))}
