@@ -1,7 +1,7 @@
-import './App.css';
-import Data from "./products.json"
+import './ProductIndex.css';
+import Data from "../products.json"
 
-function App() {
+function ProductIndex() {
   return (
     <div>
       {
@@ -24,4 +24,4 @@ function App() {
   )
 }
 
-export default App;
+export default ProductIndex;
