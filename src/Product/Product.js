@@ -2,7 +2,7 @@ import './Product.css';
 
 function Product(product) {
   return (
-    <div className="product">
+    <div className="product" key={product.id} >
       <p>Product Name: {product.name}</p>
       <p>Description: {product.description}</p>
       <p>Category: {product.category}</p>
