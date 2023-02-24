@@ -1,9 +1,18 @@
 import './App.css';
+import Data from "./products.json"
 
 function App() {
   return (
     <div>
-      hello world
+      {
+        Data.map((product) => {
+          return (
+          <div className="product">
+            <p>{product.name}</p>
+          </div>
+          )
+        })
+      }
     </div>
   )
 }
