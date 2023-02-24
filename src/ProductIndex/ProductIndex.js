@@ -2,7 +2,7 @@ import './ProductIndex.css';
 import Product from "../Product/Product"
 import Data from "../products.json"
 
-function ProductIndex({searchQuery}) {
+function ProductIndex({searchQuery, updateCart}) {
   const productList = Data.filter((product) => {
     if (searchQuery === "") {
       return product;
@@ -20,7 +20,8 @@ function ProductIndex({searchQuery}) {
         quantity={product.quantity}
         image={product.image}
         weight={product.weight}
-        model={product.model} />
+        model={product.model}
+        updateCart={updateCart} />
     )
   })
   
