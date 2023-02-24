@@ -7,11 +7,11 @@ import React, { useState } from "react";
 function App() {
   const [searchQuery, setSearchQuery] = useState("")
   const [cart, setCart] = useState([])
-
+  console.log(cart)
   function handleSearch(newSearchQuery) {
     setSearchQuery(newSearchQuery)
   }
-  
+
   function updateCart(postId, postPrice) {
     setCart(addProductToCart(postId, postPrice));
   }
@@ -26,7 +26,7 @@ function App() {
     <div>
       <SearchBar handleSearch={handleSearch}/>
       <ShoppingCart cart={cart}/>
-      <ProductIndex searchQuery={searchQuery} addProductToCart={addProductToCart}/>
+      <ProductIndex searchQuery={searchQuery} updateCart={updateCart}/>
     </div>
   )
 }
