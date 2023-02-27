@@ -7,8 +7,8 @@ function SearchBar({handleSearch}) {
   }
 
   return (
-    <div>
-      <input placeholder="Enter Item Name" onChange={onChange}/>
+    <div className='searchbar-container'>
+      <h4>Search by Name:</h4><input placeholder="Enter Item Name" onChange={onChange}/>
     </div>
   )
 }

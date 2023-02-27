@@ -6,7 +6,7 @@ function ShoppingCart({cart}) {
   const cartTotal = cart.reduce((total, {price}) => total + price, 0).toFixed(2);
 
   return (
-    <div>
+    <div className='shopping-cart-container'>
       <h4>Shopping Cart</h4>
       <p>Number of Items: {cart.length}</p>
       <p>Total: ${cartTotal}</p>
