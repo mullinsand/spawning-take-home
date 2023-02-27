@@ -26,7 +26,7 @@ function ProductIndex({searchQuery, updateCart}) {
   })
   
   return (
-    <div>
+    <div className='products-container'>
       {productList}
     </div>
   )
